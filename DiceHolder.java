@@ -6,8 +6,10 @@ public class DiceHolder{
 		cup = new ArrayList<>();
 	}
 	public int addDie(Die die){
-		if(cup.size() < 6)
+		if(cup.size() < 6){
 			cup.add(die);
+			return 1;
+		}
 		else
 			return -1;
 	}
