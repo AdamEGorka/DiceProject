@@ -23,4 +23,11 @@ public class DiceHolder{
 			cup.set(1, die);
 		}
 	}
+
+	public String toString(){
+		String string = "";
+		for(int i = 0; i < cup.size(); i++)
+			string+=cup.get(i).toString();
+		return string;
+	}
 }
