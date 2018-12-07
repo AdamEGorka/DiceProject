@@ -16,9 +16,6 @@ public class DiceRunner{
 			snakeEyes = true;
 		}
 
-		dice.roll();
-		System.out.println(dice);
-
 		//Test 2
 		System.out.println("Test 2");
 		DiceHolder cup = new DiceHolder();
@@ -26,6 +23,7 @@ public class DiceRunner{
 			cup.addDie(new Die((int)(Math.random()*17)+4));
 			System.out.print(cup+"\n");
 		}
+		System.out.println("DiceHolder is full.\nShake:");
 		cup.shake();
 		System.out.println(cup);
 	}
