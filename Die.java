@@ -5,22 +5,26 @@ public class Die{
 
 	public Die(){
 		sides = 6;
-		value = 1;
+		value = (int)(Math.random() *sides)+1;
 	}
 
 	public Die(int sides){
 		this.sides = sides;
+
+
+		value = (int)(Math.random() *sides)+1;
 	}
 
 	public int getValue(){
 		return value;
 	}
 
-	public static void roll(int value, int sides){
-		value = (int)(Math.random() * sides);
+
+	public void roll(){
+		value = (int)(Math.random() *sides)+1;
 	}
 
 	public String toString(){
-		return "Number of sides: " + sides + ", Value: " + getValue();
+		return "Number of sides: " + sides + ", Value: " + getValue()+"\n";
 	}
 }
