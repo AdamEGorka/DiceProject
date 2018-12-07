@@ -19,8 +19,8 @@ public class DiceHolder{
 	public void shake(){
 		for(int i = 0; i< cup.size(); i++){
 			die = cup.get(i);
-			die.roll(die.getValue(), die.getSides());
-			cup.set(1, die);
+			die.roll();
+			cup.set(i, die);
 		}
 	}
 

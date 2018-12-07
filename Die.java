@@ -16,11 +16,8 @@ public class Die{
 		return value;
 	}
 
-	public int getSides(){
-		return sides;
-	}
 
-	public static void roll(int value, int sides){
+	public void roll(){
 		value = (int)(Math.random() * sides);
 	}
 
